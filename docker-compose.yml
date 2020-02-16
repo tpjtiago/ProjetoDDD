@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  projetoddd.api:
+    image: hcrpimages.azurecr.io/projetoddd-api:latest
+    build:
+      context: .
+      dockerfile: ProjetoDDD.Api/Dockerfile

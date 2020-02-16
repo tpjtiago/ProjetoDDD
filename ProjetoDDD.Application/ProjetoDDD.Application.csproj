@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Applications\**" />
+    <EmbeddedResource Remove="Applications\**" />
+    <None Remove="Applications\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Crosscutting\Crosscutting.Common\Crosscutting.Common.csproj" />
+    <ProjectReference Include="..\ProjetoDDD.Domain\ProjetoDDD.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

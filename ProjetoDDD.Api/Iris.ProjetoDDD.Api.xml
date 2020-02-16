@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProjetoDDD.Api</name>
+    </assembly>
+    <members>
+        <member name="M:ProjetoDDD.Api.Controllers.DemoController.Get(System.Int32,System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            Efetua a consulta paginada dos registros cadastrados
+            </summary>
+            <param name="page">Página atual</param>
+            <param name="size">Quantidade de registros por página</param>
+            <param name="orderProperty">Propriedade para ordenação</param>
+            <param name="orderCrescent">Ordem dos registros</param>
+            <param name="filterProperty">Propriedade para filtro</param>
+            <param name="filterValue">Valor da propridade de filtro</param>
+            <returns>Lista paginada de registros</returns>
+        </member>
+        <member name="M:ProjetoDDD.Api.Controllers.DemoController.Get(System.String)">
+            <summary>
+            Efetua a consulta de um registro pelo seu código
+            </summary>
+            <param name="id">Código do registro</param>
+            <returns>Registro encontrado</returns>
+        </member>
+        <member name="M:ProjetoDDD.Api.Controllers.DemoController.Post(ProjetoDDD.Application.ViewModels.DemoViewModel)">
+            <summary>
+            Efetua o cadastro de um novo registro
+            </summary>
+            <param name="model">Dados do registro</param>
+        </member>
+        <member name="M:ProjetoDDD.Api.Controllers.DemoController.Put(ProjetoDDD.Application.ViewModels.DemoViewModel)">
+            <summary>
+            Efetua a atualização de um registro
+            </summary>
+            <param name="model">Dados do registro</param>
+        </member>
+        <member name="M:ProjetoDDD.Api.Controllers.DemoController.Delete(System.String)">
+            <summary>
+            Efetua a exclusão de um registro
+            </summary>
+            <param name="id">Código do registro</param>
+        </member>
+    </members>
+</doc>

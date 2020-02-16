@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="8.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DataTransferObjects\" />
+    <Folder Include="Enumerators\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Crosscutting\Crosscutting.Domain\Crosscutting.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
